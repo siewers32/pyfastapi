@@ -12,7 +12,7 @@ class Answer(AnswerBase):
     id: int
 
     class Config:
-        orm_mode = True
+        from_attributes = True
         
 class QuestionBase(BaseModel):
     question: str
@@ -25,7 +25,7 @@ class Question(QuestionBase):
     answers: list[Answer] = []
     
     class Config:
-        orm_mode = True
+        from_attributes = True
 
 
 class UserBase(BaseModel):
@@ -39,8 +39,7 @@ class UserCreate(UserBase):
 class User(UserBase):
     id: int
     is_active: bool
-    items: list[Item] = []
 
     class Config:
-        orm_mode = True
+        from_attributes = True
 

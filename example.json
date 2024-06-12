@@ -1,0 +1,9 @@
+{
+    "question" : {
+        "question" : "Dit is de vraag"
+    },
+    "answer" : {
+        "answer" : "Dit is het antwoord",
+        "correct" : true
+    }
+}

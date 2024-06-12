@@ -1,6 +1,8 @@
 from sqlalchemy.orm import Session
 
-from . import models, schemas
+from db import db
+from models import models
+from schemas import schemas
 
 class AnswerRepo:
     
